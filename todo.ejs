@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Todo-list</title>
+
+</head>
+<body>
+    <div class="container">
+    <div id="lor">
+    <h1 id="heading"><%=day%></h1>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <lord-icon
+    src="https://cdn.lordicon.com/hursldrn.json"
+    trigger="hover"
+    colors="primary:#4be1ec,secondary:#cb5eee"
+    state="hover"
+    stroke="70"
+    style="width:100px;height:100px;margin-top:0px">
+    </lord-icon>
+    </div>
+
+    <ul>
+       <% for(var i=0 ; i<list.length; i++){ %>
+        <div class="listitems">
+            <input type="checkbox">
+            <li><%=list[i]%></li>
+        </div>
+       
+        <%}%>
+    </ul>
+
+    <form action="/" method="post">
+        <input type="text" name="item" autocomplete="off">
+        <button id="button" type="submit" name="submit" value=<%=day%> >ADD</button>
+    </form>
+</div>
+</body>
+</html>

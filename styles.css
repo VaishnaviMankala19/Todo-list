@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Cedarville Cursive;
+}
+body{
+    display:flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://images.pexels.com/photos/2736499/pexels-photo-2736499.jpeg?cs=srgb&dl=pexels-content-pixie-2736499.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    height:500px;
+    width: 500px;
+    margin-left: 250px;
+    margin-top: 60px;
+}
+
+#heading{
+    margin-bottom: 25px;
+    color:#146C94;
+    font-size: 45px;
+}
+
+ul li{
+    list-style: none;
+    color:#19A7CE;
+    font-size: 25px;
+    text-transform: capitalize;
+    
+}
+.listitems{
+    display:flex;
+    flex-direction: row;
+}
+
+#button{
+    height:30px;
+    width: 35px;
+    cursor: pointer;
+    border-radius:5px;
+    margin: 20px;
+    background-color: #62CDFF;
+    font-weight:bolder;
+    box-shadow:2px 2px rgb(0,0,0);
+    color:white;
+}
+
+form input{
+   
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    color:#057c9c;
+    box-shadow:2px 3px rgb(0,0,0);
+}
+
+input[type="checkbox"]{
+    margin:10px;
+    height: 20px;
+    width: 20px;
+}
+
+input:checked+li{
+    text-decoration: line-through;
+    text-decoration-color:black;
+}
+
+#lor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
